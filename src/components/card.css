@@ -1,0 +1,41 @@
+.card {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+}
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.image {
+  width: 10rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+.hero-stats {
+  margin: 0.2rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.hero-stats_tag {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    width: 15rem;
+    height: 20rem;
+  }
+}
